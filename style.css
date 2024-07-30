@@ -1,0 +1,42 @@
+.about-header {
+    background: rgba(0, 0, 0, 0.4) url('https://ajfan.store/cdn/shop/files/top-view-autumnal-bowl-with-pine-cones-copy-space_4_O1.png?v=1701157595') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: #fff;
+    padding: 100px 0;
+    height: 50vh;
+  }
+  .row.featurette {
+    width: 100%;
+    padding: 50px;
+}
+.footer {
+  background-color: #d2a04c;
+  padding: 30px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+}
+
+.footer .bottom-bar {
+  background-color: #d2a04c;
+  padding: 10px 0;
+}
+
+
+/* images */
+img.card-img-top {
+  height: 210px;
+}

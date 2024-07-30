@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #F6E5BE;
+}
+.navbar-brand img {
+    height: 60px;
+}
+.navbar-nav .nav-item .nav-link {
+    color: #6B584C;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #d1a54e;
+}
+.navbar-nav .nav-item.active .nav-link {
+    color: #d1a54e;
+    font-weight: bold;
+}
+.navbar .navbar-toggler {
+    border: none;
+}
+.navbar .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D\'http://www.w3.org/2000/svg\' viewBox%3D\'0 0 30 30\'%3E%3Cpath stroke%3D\'rgba%2869, 68, 68, 0.5%29\' stroke-width%3D\'2\' stroke-linecap%3D\'round\' stroke-miterlimit%3D\'10\' d%3D\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
+}

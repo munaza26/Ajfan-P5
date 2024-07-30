@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+ <!-- <link rel="stylesheet" href="navbar.html"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    font-family: "Zilla Slab", serif;
+}
+  .section-bg {
+    background-color: #4a5d9b;
+    color: #ffffff;
+    padding: 50px 0;
+    width: 100%;
+  }
+  .card{
+    box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+
+  .section-content {
+    text-align: center;
+  }
+
+  .icon-box {
+    margin-bottom: 20px;
+  }
+
+  .icon-box i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(181, 140, 103);
+  }
+
+  .container {
+    text-align: center;
+
+  }
+
+  .testimonial p {
+    text-align: center;
+  }
+
+
+  .footer {
+    background-color: #d2a04c;
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+  }
+
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer .social-icons a {
+    margin: 0 10px;
+  }
+
+  .footer .bottom-bar {
+    background-color: #d2a04c;
+    padding: 10px 0;
+  }
+
+  /* navbar */
+   .navbar-brand img {
+            width: 40px;
+            height: auto;
+        }
+        .navbar-nav .nav-link {
+            font-weight: 600;
+            color: #555;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        .navbar-light .navbar-toggler {
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+        .btn-outline-secondary {
+            color: #555;
+            border-color: #ddd;
+        }
+        .btn-outline-secondary:hover {
+            color: #007bff;
+            border-color: #007bff;
+        }
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+        } 
+</style>
+
+<body>
+    <!-- Navbar  -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fffcf0">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/golden_logo.avif" alt="Logo">
+          
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="deal.html">Best Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stores.html">Stores</a>
+                </li>
+              
+                <li class="nav-item">
+                    <a class="nav-link" href="contact us.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carrer.html">Careers</a>
+                </li>
+            </ul>
+            <div class="d-flex ms-auto">
+                <a href="#" class="btn btn-outline-secondary me-2"><i class="bi bi-person"></i></a>
+                <a href="#" class="btn btn-outline-secondary me-2"><i class="bi bi-cart"></i></a>
+                <a href="#" class="btn btn-outline-secondary"><i class="bi bi-heart"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+  <!--carousal section   -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/Ajfan_Website_Banner_O1.webp" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="images/Ajfan_Website_Banner_O2.webp" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="images/Ajfan_Website_Banner_O3.webp" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="images/Ajfan_Website_Banner_O4.webp" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div> -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container ">
+    <h1 class="featurette-heading fw-normal lh-1 text-center my-4">Ajfan Delicates</h1>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/AjwaDateSeedPowderKhajoorSeedPowderSugarFree.avif" class="card-img-top" img-fluid mx-auto
+            width="200" height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ajwa Seed Powder</h5>
+            <p class="card-text">Rs.395.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/MedjoolSuperJumbo.avif" class="card-img-top" img-fluid mx-auto width="200" height="300"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Medjool Super Jumbo</h5>
+            <p class="card-text">RS.525.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/AjwaDatesJumbo.avif" class="card-img-top" img-fluid mx-auto width="200" height="300"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ajwa dates jumbo size</h5>
+            <p class="card-text"> RS.525.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/BreakfastHeartMix.webp" class="card-img-top" img-fluid mx-auto width="200" height="300"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Breakfast Heart Mix</h5>
+            <p class="card-text"> RS.290.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/SuperPremiumAfghanFigs_Anjeer.avif" class="card-img-top" img-fluid mx-auto width="200"
+            height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Super Premium Afghan Figs_Anjeer</h5>
+            <p class="card-text"> RS.495.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/ChileWalnutWithoutShell.avif" class="card-img-top" img-fluid mx-auto width="200" height="300"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Chile Walnut Without Shell</h5>
+            <p class="card-text">RS.548.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/PremiumIranianPistachio-PistaNo1.avif" class="card-img-top" img-fluid mx-auto width="200"
+            height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Premium Iranian Pistachio-PistaNo1</h5>
+            <p class="card-text"> RS.470.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/MamraAlmondsBadam.webp" class="card-img-top" img-fluid mx-auto width="200" height="300"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Mamra Almonds Badam</h5>
+            <p class="card-text">RS.398.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="section-bg my-5">
+    <div class="d-flex justify-content-center align-items-center" style="width: 80%; margin: auto;">
+      <div class="section-content d-flex" style="flex-direction:column; gap: 3em; padding-left: 30px;">
+        <h2 style="text-align: left;">AJFAN DATES AND NUTS</h2>
+        <p style="text-align: left; width: 85%;">Welcome to Ajfan, where an unwavering commitment with a
+          heritage of quality that spans over 40 years. Enjoy our unique assortment of dates, harvested from
+          our own organic farm in the Middle East, featuring over 40 varieties. Experience a world of luxury
+          with our exquisitely curated collection of exotic fruits, nuts, and imported beverages. Our
+          dedication to excellence transcends the realm of a mere store, making Ajfan the ultimate destination
+          for dates, dry fruits, nuts, and more.</p>
+      </div>
+      <div class="row text-center">
+        <div class="top" style="display: flex; flex-direction: row; gap: 5em;">
+          <div class="col-md-3 icon-box">
+            <div class="icon d-flex" style="gap: 15px;">
+              <i class="fas fa-store"></i>
+              <div class="content">
+                <h3>150+</h3>
+                <p>Number of stores</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 icon-box">
+            <div class="icon d-flex" style="gap: 15px;">
+              <i class="fas fa-globe"></i>
+              <div class="content">
+                <h3>4</h3>
+                <p>Countries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom" style="display: flex; flex-direction: row; gap: 5em;">
+          <div class="col-md-3 icon-box">
+            <div class="icon d-flex" style="gap: 15px;">
+              <i class="fas fa-box"></i>
+              <div class="content">
+                <h3>4000+</h3>
+                <p>Products</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 icon-box">
+            <div class="icon d-flex" style="gap: 15px;">
+              <i class="fas fa-seedling"></i>
+              <div class="content">
+                <h3>45</h3>
+                <p>Premium dates</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container ">
+    <h1 class="featurette-heading fw-normal lh-1 text-center my-4">FEATURED COLLECTION</h1>
+
+    </p>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/SummerMix_e7a2c97d-a211-46dc-9e12-81c2d75f4ad0.avif " class="card-img-top" img-fluid mx-auto
+            width="200" height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Summer Mix</h5>
+            <p class="card-text">RS.175.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/PowerMix_dbf09147-1de8-4314-b6c5-2c0068c7123a.avif" class="card-img-top" img-fluid mx-auto
+            width="200" height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Power Mix</h5>
+            <p class="card-text"> RS.138.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/MixDryFruits.webp" class="card-img-top" img-fluid mx-auto width="200" height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mix Dry Fruits</h5>
+            <p class="card-text">RS.310.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/ClassicSeedMix_e86c3f11-091b-409c-a76f-292e1dc0c9ba.webp" class="card-img-top" img-fluid
+            mx-auto width="200" height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Classic See Mix</h5>
+            <p class="card-text"> RS.75.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 my-4">
+      <div class="col ">
+        <div class="card h-100">
+          <img src="images/AmlaMasala.avif " class="card-img-top" img-fluid mx-auto width="200" height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Amla Masala coated</h5>
+            <p class="card-text">RS.175.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/AmlaHoneyCoated.avif" class="card-img-top" img-fluid mx-auto width="200" height="300"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Amla Honey Coated</h5>
+            <p class="card-text"> RS.138.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/DriedStrawberries.avif" class="card-img-top" img-fluid mx-auto width="200" height="300"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dried Strawberries</h5>
+            <p class="card-text">RS.310.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/premium dry fruits and nuts gift box.webp" class="card-img-top" img-fluid mx-auto width="200"
+            height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">premium dry fruits and nuts gift box</h5>
+            <p class="card-text"> RS.5745.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <h1 class="featurette-heading fw-normal lh-1 text-center my-4">NEW ARRIVALS</h1>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/moringa-leaf.webp" class="card-img-top" img-fluid mx-auto width="200" height="300"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title">moringa-leaf</h5>
+              <p class="card-text">Rs.175.00.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/millet-mixture.jpg" class="card-img-top" img-fluid mx-auto width="200" height="300"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title">millet-mixture</h5>
+              <p class="card-text"> RS.138.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/dhal-boojiya.webp" class="card-img-top" img-fluid mx-auto width="200" height="300"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><dhal-boojiya></h5>
+              <p class="card-text">RS.310.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/kaju-mixture.jpg" class="card-img-top" img-fluid mx-auto width="200" height="300"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><kaju-mixture></h5>
+              <p class="card-text"> RS.167.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-6 my-5">
+        <h2 class="featurette-heading fw-normal lh-1">STORING YOUR FAVOURITE DATES, DRY FRUITS AND NUTS!</h2>
+        <!-- <p class="lead">For immediate usage, store these products in airtight containers at cool, dark spot reducing the
+          exposure of light, oxygen and moisture.</p> -->
+        <p class="lead">Do not expose to heat as it may go rancid or create grounds for soft bodied animals.
+        </p>
+        <p class="lead">For longer user, keep it refrigerated giving it the right taste and more flavourful vibrant to
+          these tasteful Products.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/top-view-autumnal-bowl-with-pine-cones-copy-space_4_O1.webp"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="900" height="700"
+          alt="Autumnal Bowl with Pine Cones">
+      </div>
+    </div>
+  </div>
+  <section class="container mt-5">
+    <h2>WHAT OUR CUSTOMERS SAY</h2>
+    <div class="testimonial">
+      <p>"For the quality definitely needs a good rating and review thats why came here .. very delicious whole family
+        enjoyed it.. think how it would be after 2 to 3 days but very well packed and came safely ??packaging needs a
+        special appreciation??"</p>
+      <p class="my-4"><strong>SRUTHI KK</strong></p>
+    </div>
+
+  </section>
+<div class="boxes d-flex justify-content-around">
+  <div class="card" style="width: 18rem;">
+    <img src="images/RamadanGiftCombo.avif" class="card-img-top" height="192px" alt="...">
+    <div class="card-body">
+      <p class="card-text">RamadanGiftCombo.  
+      </p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="images/SignatureRoyalMedjoolJordanGiftBox (2).avif"card-img-top alt="...">
+    <div class="card-body">
+      <p class="card-text">Signature Royal Med-joolJordan Gift-Box</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="images/SignatureRoyalMedjoolJordanGiftBox (1).avif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Signature Royal Med-joolJordan Gift-Box</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="images/premium dry fruits and nuts gift box.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">premium dry fruits and nuts gift box</p>
+    </div>
+  </div>
+</div>
+  
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Occasions Gifting</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>All Products</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Dates</a></li>
+            <li><a href="#">Nuts</a></li>
+            <li><a href="#">Dry Fruits</a></li>
+            <li><a href="#">Seeds</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Ajfan Delicacies</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Dates</a></li>
+            <li><a href="#">Nuts</a></li>
+            <li><a href="#">Dry Fruits</a></li>
+            <li><a href="#">Seeds</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Follow Us On</h5>
+          <div class="social-icons">
+            
+            
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>© 2024, Ajfan Dates & Nuts. All Rights Reserved.</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Delivery</a></li>
+              <li class="list-inline-item"><a href="#">Returns</a></li>
+              <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#">Careers</a></li>
+            </ul>
+            <p>Use Code "AJFANFS" Free shipping for orders over INR 1500</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
