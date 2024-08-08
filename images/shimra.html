@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // map 
+        // const num=[1,2,3,4,5];
+        // const square = x =>x*x;
+        // const squares = num.map(square);
+        // console.log(squares);
+
+
+        // filter 
+
+        // const Number=[1,2,3,4,5,6,7,8,9,10];
+        // const is even=x=>x%2===0;
+        // const even Numbers=Numbers.filter(is even);
+        // console.log(even Numbers);
+        const numbers=[1,2,3,4,5];
+        const sumReducer =(accumulator,currentvalue)=>accumulator+currentvalue;
+        const sum = numbers.reduce(sumReducer,0);
+        console.log(sum)
+   </script>
+</body>
+</html>
